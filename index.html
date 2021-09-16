@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Playstation Store</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barnave">
+            <img class="sony", src="./imgs/logo.png">
+            <nav>
+                <ul id="menulista">
+                    <li class="li"> <a class="navega-link">Consoles</a> </li>
+                    <li class="li"> <a class="navega-link">Acessorios</a> </li>
+                    <li class="li"><a class="navega-link">controles</a> </li>
+                    <li class="li"><a class="navega-link">Outros</a></li>
+                </ul>  
+            </nav>
+                <img src="./imgs/menu.png" alt="botao-menu" class="menu-icon" onclick="showMenu()">
+        </div>
+
+        <div class="especific">
+            <div class="coluna1">
+                <h2>PS5 Dualshock</h2>
+                <h3>Wireless Controller for PlayStation</h3>
+                <p>Controle Original</p>
+                <h4>R$ 222,50</h4>
+                <button class="Compra">Comprar agora <img src="./imgs/arrow.png" alt="seta"></button>
+            </div>
+            <div class="coluna2">
+            <img class="Controle" src="./imgs/controller.png" alt="Controle">
+                <div class="caixacor"></div>
+                <button class="addcar">
+                    <img src="./imgs/add.png" alt="Adicionar ao carrinho">
+                 </button>
+            </div>
+        </div>
+        <div class="redessociais">
+            <img src="./imgs/fb.png" alt="">
+            <img src="./imgs/ig.png" alt="">
+            <img src="./imgs/tw.png" alt="">
+        </div>
+
+    </div>
+</body>
+<script>
+    const menulista = document.getElementById("menulista")
+    menulista.style.maxHeight = "0px"
+
+    function showMenu(){
+        if(menulista.style.maxHeight == "0px"){
+            menulista.style.maxHeight = "120px"
+        } else{
+            menulista.style.maxHeight = "0px"
+        }
+    }
+</script>
+</html>
